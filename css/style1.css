@@ -1,0 +1,499 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+ul{
+	overflow: hidden;
+	list-style: none;
+}
+a{
+	color: #37a;
+    text-decoration: none;
+}
+strong{
+	color:#F54D06;
+	font-weight: normal;
+	margin-left: 2px;
+}
+input:focus,textarea:focus {outline:none}
+body{font-size:14px;font:12px Helvetica,Arial,sans-serif;color: #111}
+   
+	
+/*预先设置*/
+.w950{
+	width:950px;
+	margin:0 auto;
+}
+.blue{color:#37a}
+.borderbom{
+	height:28px;
+	border-bottom: solid 1px #eaeaea;
+	overflow: hidden;
+}
+	
+.borderbom h4{
+	float: left;
+
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: normal;
+}
+.borderbom h4 span a{
+	font-size: 12px;
+	color:#37a;
+	margin-left:16px;
+	
+}
+.btn{
+	float: right;
+	margin-right:2px;
+	padding-top:6px;
+	
+	}
+.scroll-btn{
+	float: right;
+}
+.scroll-btn a{
+	display: inline-block;
+	font-size: 15px;
+	width:18px;
+	height:18px;
+	border-radius: 18px;
+	border:none;
+	text-align: center;
+	line-height: 18px;
+	color:#fff;
+	background: #4b8ccb;
+	margin-left:8px;
+}
+.scroll-btn a:hover{
+	color:#4b8ccb;
+	background: #fff;
+}
+.num{
+	color:#666;
+}	
+/*hd*/
+/*global-nav*/
+#global-nav{
+	
+	width:100%;
+	background-color:#545652;
+	overflow: hidden;
+}
+#global-nav li{
+	float:left;
+	padding:0 14px;
+}
+#global-nav li a{
+	display: inline-block;
+	color:#d5d5d5;
+	height:28px;
+	line-height: 28px;
+}
+#global-nav li a:hover{
+	color:#fff;
+}
+.left-nav{
+	float:left;
+}
+.right-nav{
+	float:right;
+}
+	
+/*movie-nav*/
+#movie-nav{
+	margin-bottom:50px;
+	background-color:#f0f3f5;
+}
+.logo-search{
+	overflow: hidden;
+	border-bottom:#e5ebe4 solid 1px;
+}
+.logo{
+	float:left;
+	width:115px;
+	height:80px;
+	background: url("../images/lg_movie_a12_2.png") no-repeat left center;
+}
+.search{
+	float: left;
+	margin:26px 0 0 30px;
+}	
+.search_text{
+	width:560px;
+	height:31px;
+	float:left;
+	border:none;
+	border-bottom: solid 1px #8f8f8f;
+	padding:0 6px;
+}
+.search_btn{
+	height:33px;
+	width:40px;
+	text-indent: -999em;
+	background: url("../images/hd-1_07.png") no-repeat 0 0;
+	margin-left:-2px;
+	cursor: pointer;
+	vertical-align: middle;
+	border:none;
+}
+.secondary-nav li{
+	float:left;
+	margin-right:28px;
+	height:36px;
+	line-height:36px;
+}
+.secondary-nav li a{
+	color:#37a;
+	font-size: 13px;
+	
+}
+	
+	
+/*bd*/
+/*content主体左部分*/
+#content{
+	width:592px;
+	padding-right:40px;
+	float:left;
+	overflow: hidden;
+}
+.now-list{
+	margin-top:12px;
+}
+.now-list>ul>li{
+	width:130px;
+	position: relative;
+	float: left;
+	margin-right:24px;
+	text-align: center;
+}
+.now-list>ul>li:nth-child(4n)
+{
+	margin-right:0;
+}
+.now-list .title{
+	margin:8px 0 4px;
+	font-size: 16px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.now-list .title a{
+	color:#333;
+}
+	
+.now-list .buyBtn{
+	background: url("../images/buyBtn.gif") no-repeat no-repeat left center;
+	color:#fff;
+	border:none;
+	height:24px;
+	width:90px;
+	text-align: center;
+	margin-top:8px;
+}	
+.start{
+	display: inline-block;
+	width:45px;
+	height:9px;
+	background: url("../images/smlstars.gif") no-repeat;
+	margin:0 4px;
+}
+.start7{
+	background-position:0 -18px;
+}
+.no-scroll{
+	display: block;
+	margin:28px 0 26px;
+}	
+
+/*hot-nav*/
+.hot-nav{
+	margin-bottom: 6px;
+}
+	
+.hot-nav label{
+	display: inline-block;
+	color:#666;
+    vertical-align: middle;
+}
+.tags{
+	margin:20px 0 12px;
+}
+.tags label{
+	font-size: 15px;
+	padding:2px 8px;
+    margin:0 2px 8px 0;
+    border-radius: 4px;
+}	
+.tags label:not(:first-child):hover{
+	background: #37a;
+	color:#fff;
+}
+.tags .activate{
+	background: #4b8ccb;
+	color:#fff;
+}
+.tags label input{
+	display:none;
+}
+.tool{
+	font-size: 12px;
+	border-top:solid 1px #eaeaea;
+	padding:24px 0 8px;
+	overflow: hidden;
+}
+	
+.tool label input{
+	 position: relative;
+	 top:3px;
+	 margin-right:4px;
+}
+.only{
+	float: left;
+}
+.check{
+	float:right;
+}
+
+.hot-movie li{
+
+	float: left;
+	margin:0 10px 20px 0;
+}
+.hot-movie li:nth-child(4n){
+	margin-right: 0;
+}
+.hot-movie p{
+	width:140px;
+	text-align: center;
+	color:#37a;
+	height:38px;
+	overflow: hidden;
+	text-overflow:ellipsis;
+	word-wrap:break-word ;
+}
+.loadMore{
+	display: block;
+	color:#37a;
+	height:34px;
+	line-height: 34px;
+	text-align: center;
+	background: #f7f7f7;
+	
+}
+.loadMore:hover{
+	background: #e8e8e8;
+}
+/*recommend*/
+.recommend{
+	margin:40px 0 30px;
+}
+.recommend-scroll{
+	margin-top:16px;
+	height:240px;
+	width:100%;
+	background: yellow;
+}
+/*review*/
+.conment{
+	overflow: hidden;
+	margin:48px 0;
+}
+.reviews{
+	margin-top:24px;
+}
+.review{
+	padding-bottom: 28px;
+	border-bottom: solid 1px #eaeaea;
+	margin-bottom: 32px;
+}
+	
+.review img{
+	float: left;
+}
+.review a{
+	color:#37a;
+}
+.review-bd{
+	padding: 4px 0 0 78px;
+}
+.review-top{
+	margin-bottom: 8px;
+}
+.review-mid{
+	font-size: 13px;
+	padding: 4px 0;
+}
+.review-ft{
+	font-size: 13px;
+}
+	
+/*aside*/
+#aside{
+	width:302px;
+	overflow: hidden;
+	float: right;
+}
+.answer{
+	height:50px;
+	line-height: 50px;
+	background: #f2f7f6;
+	padding-left:18px;
+	border-radius: 4px;
+}
+.answer li:before{
+	content: "";
+	display: inline-block;
+	width:6px;
+	height:6px;
+	background: #cedcd9;
+	border-radius: 6px;
+	margin-right:4px;
+}
+.address-theatre{
+	margin:20px 0;
+	height:42px;
+	padding:12px 0 0 8px;
+	background: #f6f3d3;
+}
+.address{
+	height:24px;
+	line-height: 24px;
+	width:60px;
+	color:#666;
+	
+	padding-left:3px;
+	font-size: 12px;
+	float: left;
+	
+	background: white;
+	border:solid 1px #ddd;
+	background: #fff url("../images/review-expand.png") no-repeat 50px center;
+}
+.theatre{
+	width:200px;
+	height:24px;
+	float: right;
+	overflow: hidden;
+}
+	
+.cinemas-search-box{
+	position: relative;
+}	
+	
+.theatre input{
+	height:24px;
+	width:182px;
+	border:none;
+	padding:0 4px;
+	
+}
+.search-theatre{
+	position: absolute;
+
+	right:16px;
+	
+	display: inline-block;
+	width:20px;
+	height:24px;
+	
+	background: url("../images/focus_search.png") no-repeat 4px center;
+}
+.movieAction{
+	height:160px;
+	background: #f2f7f6;
+	border-radius: 4px;
+	padding: 24px 0 0 20px;
+	margin:18px 0 0 0;
+}
+.movieAction h4{
+	color:#072;
+	font-weight: normal;
+}
+.movieAction li{
+	margin-top: 12px;
+}
+.movieRank{
+	margin:32px 0;
+}
+.rankList li{
+	height:36px;
+	line-height: 36px;
+	border-bottom: 1px solid #eaeaea;
+	padding-left: 4px;
+}
+.rankList a{
+	margin-left: 8px;
+
+}
+.change{
+	height:42px;
+	line-height: 42px;
+	background: #f2f7f6;
+	padding-left:18px;
+	border-radius: 4px;
+	margin:20px 0;
+
+}
+.focusUs {
+	margin:20px 0;
+}
+.focusUs li{
+	float: left;
+	display: inline-block;
+	width:40px;
+	text-align: center;
+	margin-right: 16px;
+}
+.focusUs img{
+	margin:auto 0;
+}
+.hotDou li{
+	display: block;
+	padding:10px 2px 10px;
+	border-bottom:solid 1px #eaeaea;
+}
+.hotDou .title{
+	width:72%;
+	font-size: 13px;
+}
+.hotDou span{
+	float: right;
+	color:#999;
+}
+.cooperate{
+	margin:40px 0 32px 0;
+	padding-left:2px;
+}
+.cooperate li{
+	margin:12px 0;
+}
+.douban-app{
+	margin:40px 0;
+}
+.ft-pic{
+	display: block;
+	margin-bottom:60px;
+}
+/*copyRight*/
+#copyRight{
+	height:30px;
+	line-height: 30px;
+	font-size: 13px;
+	border-top:1px dashed gray;
+}
+#copyRight .left{
+	float: left;
+	color:#8e8e8e;
+	padding-left: 12px;
+}
+#copyRight .right{
+	float: right;
+}
+#copyRight .right li{
+	float: left;
+	margin-left:12px;
+}
